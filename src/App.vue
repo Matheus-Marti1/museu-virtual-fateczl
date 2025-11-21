@@ -1,5 +1,6 @@
 <script setup>
 import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 import { ref, onMounted, onUnmounted } from "vue";
 
 const showBackToTop = ref(false);
@@ -32,6 +33,8 @@ onUnmounted(() => {
         </transition>
       </router-view>
     </main>
+
+    <Footer />
 
     <button
       v-show="showBackToTop"
